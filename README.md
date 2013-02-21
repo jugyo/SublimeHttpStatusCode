@@ -5,6 +5,8 @@ Typical web programmer knows about all http status code, but unfortunately I'm n
 
 This is a Sublime Text 2 Plugin to look up Http Status Code quickly.
 
+![Screenshot](http://i.imgur.com/K3n1S7S.png)
+
 ## Installation
 
 ```
@@ -14,6 +16,8 @@ $ git clone https://github.com/jugyo/SublimeHttpStatusCode.git HttpStatusCode
 
 ## Keymap
 
-    [
-      { "keys": ["super+shift+ctrl+h"], "command": "http_status_code" }
-    ]
+```json
+[
+  { "keys": ["super+shift+ctrl+h"], "command": "http_status_code" }
+]
+```
