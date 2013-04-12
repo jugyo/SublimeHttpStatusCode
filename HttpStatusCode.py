@@ -3,6 +3,7 @@ import sublime_plugin
 class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
     def run(self):
         status_codes = [
+            ["100: Continue"],
             ["101: Switching Protocols"],
             ["102: Processing"],
             ["200: OK"],
@@ -14,6 +15,7 @@ class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
             ["206: Partial Content"],
             ["207: Multi-Status"],
             ["208: Already Reported"],
+            ["226: IM Used"],
             ["300: Multiple Choices"],
             ["301: Moved Permanently"],
             ["302: Found"],
@@ -21,6 +23,7 @@ class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
             ["304: Not Modified"],
             ["305: Use Proxy"],
             ["307: Temporary Redirect"],
+            ["308: Permanent Redirect"],
             ["400: Bad Request"],
             ["401: Unauthorized"],
             ["402: Payment Required"],
@@ -35,9 +38,9 @@ class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
             ["411: Length Required"],
             ["412: Precondition Failed"],
             ["413: Request Entity Too Large"],
-            ["414: Request-URI Too Large"],
+            ["414: Request-URI Too Long"],
             ["415: Unsupported Media Type"],
-            ["416: Request Range Not Satisfiable"],
+            ["416: Requested Range Not Satisfiable"],
             ["417: Expectation Failed"],
             ["418: I'm a teapot"],
             ["422: Unprocessable Entity"],
@@ -57,6 +60,7 @@ class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
             ["505: HTTP Version Not Supported"],
             ["506: Variant Also Negotiates"],
             ["507: Insufficient Storage"],
+            ["508: Loop Detected"],
             ["509: Bandwidth Limit Exceeded"],
             ["510: Not Extended"],
             ["511: Network Authentication Required"]
