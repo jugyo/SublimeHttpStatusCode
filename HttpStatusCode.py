@@ -1,4 +1,4 @@
-import sublime_plugin
+import sublime, sublime_plugin
 
 class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
     def run(self):
@@ -67,6 +67,7 @@ class HttpStatusCodeCommand(sublime_plugin.WindowCommand):
         ]
 
         def on_done(index):
-            pass
+            if index >= 0:
+                sublime.set_clipboard(status_codes[index][0])
 
         self.window.show_quick_panel(status_codes, on_done)
